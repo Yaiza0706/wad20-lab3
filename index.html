@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <title>YourTube</title>
     <link rel="stylesheet" href="res/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +15,7 @@
         <div>
             <img src="res/images/logo.png" alt="YourTube">
         </div>
-        <div>
+        <div class="search-container">  <!--Add search-container class to second div  of the nav tag.-->
             <input type="text"><button>Search</button>
         </div>
         <div></div>
@@ -21,7 +23,7 @@
 </header>
 
 <section>
-    <div>
+    <div class="video-container">
         <video width="320" height="240" controls>
             <source src="res/media/video.mp4" type="video/mp4">
             <source src="res/media/video.ogg" type="video/ogg">
@@ -29,8 +31,17 @@
         </video>
         <h1>Drunk coding tutorial #12</h1>
         <h6>Date: Sep 16, 2019 14:15</h6>
+        <!--TASK 4 Add a comment box below video (use forms) and style it ALSO CODE IN STYLE.CSS-->
+        <form>
+            <div class="comment-box">
+                <textarea name="comment" placeholder="Comment"></textarea>
+            </div>
+            <div>
+                <button style="cursor: pointer" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
-    <div>
+    <div class="suggested-container">
         <h3>Suggested</h3>
         <ul>
             <li>
@@ -81,5 +92,14 @@
 <footer>
     <p>&copy; YourTube 2019</p>
 </footer>
+<!-- In style.css TASK 1: Style footer (e.g. change text color, align text to center...)-->
+
 </body>
 </html>
+
+
+<!-- TASK 2  Freeze navigation bar, so it follows scroll bar.
+    HTML,BODY,NAV
+    TASK 3  When user hovers over navigation bar let it have a shadow HTML,BODY, SECOND NAV HOVER
+    TASK 5 Adapt for mobile, END OF STYLE.CSS
+     -->
